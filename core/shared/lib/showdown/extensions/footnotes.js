@@ -58,14 +58,14 @@
                               '<p>'+content+'<a href="#fnref:'+n +
                                 '" title="return to article"> ↩</a>' +
                               '</p>' +
-                            '</li>'
+                            '</li>';
 
                     if (i == 0) {
                         s = '<div class="footnotes"><ol>' + s;
                     }
 
                     if (i == total-1) {
-                        s = s + '</ol></div>'
+                        s = s + '</ol></div>';
                     }
 
                     i += 1;
