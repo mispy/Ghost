@@ -535,6 +535,7 @@ var _              = require('lodash'),
 
                         'core/shared/lib/showdown/extensions/ghostimagepreview.js',
                         'core/shared/lib/showdown/extensions/ghostgfm.js',
+                        'core/shared/lib/showdown/extensions/footnotes.js',
 
                         'core/shared/lib/nanoscroller/nanoscroller.js'
                     ]
@@ -572,6 +573,7 @@ var _              = require('lodash'),
 
                         'core/shared/lib/showdown/extensions/ghostimagepreview.js',
                         'core/shared/lib/showdown/extensions/ghostgfm.js',
+                        'core/shared/lib/showdown/extensions/footnotes.js',
 
                         'core/shared/lib/nanoscroller/nanoscroller.js'
                     ]
