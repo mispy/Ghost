@@ -31,7 +31,7 @@
 
                 // Inline footnotes e.g. "foo[^1]"
                 var i = 0;
-                var inline_regex = /\[\^(\d|n)\](?!:)/g;
+                var inline_regex = /(?!^)\[\^(\d|n)\]/gim;
                 text = text.replace(inline_regex, function(match, n) {
                     // We allow both automatic and manual footnote numbering
                     if (n == "n") n = i+1;
@@ -44,7 +44,7 @@
                 });
 
                 // Expanded footnotes at the end e.g. "[^1]: cool stuff"
-                var end_regex = /\[\^(\d|n)\]: ([\s\S]*?)\n(?!    )/g;
+                var end_regex = /\[\^(\d|n)\]: ([\s\S]*?)\n(?!    )/gim;
                 var m = text.match(end_regex);
                 var total = m ? m.length : 0;
                 var i = 0;
